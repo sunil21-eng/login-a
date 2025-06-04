@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="/static/dashboard_style.css" />
+<body>
+    
+    <!--Header section start-->
+    <header class="header">
+        <nav class="navbar">
+              <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Features</a>
+                <a href="#">Contact</a>
+            </div>
+            <form action="/logout" method="post">
+            <div class="logout">
+                <button type="submit" id="logout-btn">Logout</button>
+            </div>
+            </form>
+        </nav>
+    </header>
+
+    <!--Header section end-->
+
+    <!--Hero section start-->
+    <section id="home" class="hero">
+        <div class="hero-contant">
+            <h1> welcome to Artimes website, Let’s build a great website together.</h1>
+            <h1><%= user %></h1>
+            <p>We can bring your web design vision and ideas to life through innovative custom design for your business.
+                We work on hundreds of websites a year, and bring unique insight from our deep experience.</p>
+            <a href="" class="btn"> Lean more</a>
+        </div>
+    </section>
+    <!--Hero section end-->
+
+
+    <!--Features section start-->
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="features-grid">
+            <div class="features-item">
+                <h3>Responsive Desing</h3>
+                <p>Your website look great on an device</p>
+            </div>
+
+            <div class="features-item">
+                <h3>Morden UI</h3>
+                <p>Clean, Simple, visually appealing layout</p>
+            </div>
+
+            <div class="features-item">
+                <h3>Costomizable</h3>
+                <p>adject every aspects to your brand</p>
+            </div>
+        </div>
+
+
+
+    </section>
+    <!--Features section end-->
+
+
+
+    <!--Contact section start-->
+    <section id="contact" class="contact">
+        <h2>Contact us</h2>
+        <form id="contactform">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="Email" placeholder="your email" required>
+            </div>
+            <div class="form-group">
+                <label for="massage">Massage</label>
+                <textarea type="text" id="massage" placeholder="your massage" rows="5" required>
+            </textarea>
+            </div>
+            <button type="submit" class="btn">Send Massage </button>
+
+
+        </form>
+
+    </section>
+
+    <!--Contact section end-->
+
+    <!--footer section start-->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 sunil.All right reserved</p>
+        </div>
+        <div class="social-icons">
+            <a href="" target="-blank" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" target="-blank" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" target="-blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" target="-blank" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <!--footer section end-->
+
+</body>
+</html>

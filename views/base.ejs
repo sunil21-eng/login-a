@@ -1,0 +1,24 @@
+<%-include('header')-%>
+
+ <div class="login-container">
+        <h1>Login</h1>
+        <% if(locals.logout){ %>
+            <div class="alter alert-success">
+                <%=logout%>
+            </div>
+
+        <%} %>
+        <form id="login" action="/login" method="post">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email ID" >
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" >
+            <% if(error){ %>
+                <h3 >Invalid email or password</h3>
+            <% } %>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+<%-include('footer')-%>
